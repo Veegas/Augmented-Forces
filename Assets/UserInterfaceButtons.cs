@@ -109,6 +109,7 @@ public class UserInterfaceButtons : MonoBehaviour
 	{
 		// transform.localScale += new Vector3(scalingSpeed, scalingSpeed, scalingSpeed);
 		GameObject.FindWithTag ("Model").GetComponent<Rigidbody> ().mass += 0.1f;
+		GameObject.FindWithTag ("Model").transform.localScale += new Vector3 (0.1f, 0.1f, 0.1f);
 		Debug.Log (GameObject.FindWithTag ("Model").GetComponent<Rigidbody> ().mass);
 		}
 
@@ -188,6 +189,7 @@ public class UserInterfaceButtons : MonoBehaviour
 	{
 		// transform.localScale += new Vector3(-scalingSpeed, -scalingSpeed, -scalingSpeed);
 		GameObject.FindWithTag ("Model").GetComponent<Rigidbody> ().mass -= 0.1f;
+		GameObject.FindWithTag ("Model").transform.localScale -= new Vector3 (0.1f, 0.1f, 0.1f);
 		Debug.Log (GameObject.FindWithTag ("Model").GetComponent<Rigidbody> ().mass);
 
 	}
